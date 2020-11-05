@@ -54,4 +54,15 @@ main {
     background: #03A9F4;
     transform: rotateY(0);
 }
+
+.background {
+    width: 100%;
+    background: #F1C1C1;
+    border-radius: 4px;
+    transition: .2s ease;
+    z-index: 1;
+}
+.checkbox:checked ~ .background {
+    background: #03a8f462;
+}
 /*# sourceMappingURL=style.css.map */
