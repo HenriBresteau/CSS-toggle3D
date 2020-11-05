@@ -25,5 +25,28 @@ main {
     z-index: 3;
     opacity: 0;
 }
-
+.box, .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.box {
+    z-index: 2;
+    perspective: 110px;
+}
+.box span {
+    position: absolute;
+    top:5px;
+    right: 6px;
+    width: 54px;
+    height: 49px;
+    border-radius: 3px;
+    background: #F44336;
+    transform: rotateY(-180deg);
+    transform-origin: 0% 50%;
+    transition: 0.6s ease all;
+    z-index: 1;
+}
 /*# sourceMappingURL=style.css.map */
