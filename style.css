@@ -65,4 +65,28 @@ main {
 .checkbox:checked ~ .background {
     background: #03a8f462;
 }
+.background::before, .background::after{
+    position: absolute;
+    transition:.5s linear;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.background::after{
+    content: "J'accepte";
+    right: -78px;
+    color: #03a8f4;
+    opacity: 0;
+}
+.background::before{
+    content: 'Je refuse';
+    left: -80px;
+    color: #F44336;
+}
+.checkbox:checked ~ .background::before {
+    opacity: 0;
+}
+.checkbox:checked ~ .background::after {
+    opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
